@@ -7,7 +7,8 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
 mongoose.connect(process.env.MONGO_URL, {
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    useFindAndModify: false
 }).then(() => {
     console.log("Successfully connected to the database");
 }).catch(err => {
@@ -24,7 +25,7 @@ const app = express();
 
 // parse application/json
 app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 // REST API PRODUCT ROUTE
 app.use('/api/products', apiProductRoute);

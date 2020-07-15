@@ -2,7 +2,7 @@
 const Product = require('../models/product.model');
 
 // Check if product existed or not
-module.exports.checkProduct = function (req, res, next) {
+module.exports.checkProduct = async function (req, res, next) {
     let product;
     try {
         product = await Product.findById(req.params.id);
