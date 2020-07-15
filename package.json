@@ -1,0 +1,23 @@
+{
+  "name": "my_restapi_nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quangnguyen90/my_restapi_nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quangnguyen90/my_restapi_nodejs/issues"
+  },
+  "homepage": "https://github.com/quangnguyen90/my_restapi_nodejs#readme"
+}
